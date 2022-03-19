@@ -15,7 +15,6 @@ $token = curl_exec($curl);
 curl_close($curl);
 $token = json_decode($token);
 print_r($token);
-
 $curl = curl_init();
 $price_url = "http://".$server_socket."/api/pricelist";
 $authorization = "Authorization: Bearer ".$token->token;
